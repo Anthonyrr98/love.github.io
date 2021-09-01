@@ -1,0 +1,179 @@
+﻿<!doctype html>
+<html>
+
+<head>
+
+
+	<link rel="icon" href="images/caidan1.icon" type="image/x-icon" />
+
+	<meta charset="utf-8">
+	<title>一个神秘的盒子</title>
+	<script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+	<style>
+		@keyframes xuanz {
+			0% {
+				transform: rotateY(0deg) rotatex(15deg);
+			}
+
+			100% {
+				transform: rotateY(360deg) rotatex(15deg);
+			}
+		}
+
+		.wt {
+			perspective: 800px;
+		}
+
+		.d1 {
+			transform-style: preserve-3d;
+			position: relative;
+			width: 200px;
+			height: 200px;
+			margin: 400px auto;
+			animation: xuanz 10s infinite linear;
+		}
+
+		.d1 div {
+
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+
+		.d1 div:nth-child(1) {
+			transform: translatez(-100px);
+			background: url(https://pic.baixiongz.com/uploads/2021/06/15/c5759781839b4.jpg) 0 0PX /cover;
+		}
+
+		.d1 div:nth-child(2) {
+			transform: rotateY(90deg) translatez(-100px);
+			background: url(https://pic.baixiongz.com/uploads/2021/06/15/7473be9eb2257.jpg) 0 0PX /cover;
+		}
+
+		.d1 div:nth-child(3) {
+			transform: rotateY(90deg) translatez(100px);
+			background: url(https://pic.baixiongz.com/uploads/2021/06/15/6d4639647a60e.jpg) 0 0PX /cover;
+		}
+
+		.d1 div:nth-child(4) {
+			transform: rotatex(-90deg) translatez(100px);
+			background: url(https://pic.baixiongz.com/uploads/2021/06/15/a1983c1065d90.jpg) 0 0PX /cover;
+		}
+
+		.d1 div:nth-child(5) {
+			transform: rotatex(-90deg) translatez(-100px);
+			background: url(https://pic.baixiongz.com/uploads/2021/06/15/8192cffa141f8.jpg) 0 0PX /cover;
+		}
+
+		.d1 div:nth-child(6) {
+			transform: translatez(100px);
+			background: url(https://pic.baixiongz.com/uploads/2021/06/15/908e0404ae3b2.jpg) 0 0PX /cover;
+		}
+
+		.d1 div:nth-child(7),
+		div:nth-child(8),
+		div:nth-child(9),
+		div:nth-child(10),
+		div:nth-child(11),
+		div:nth-child(12) {
+			width: 300px;
+			height: 300px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -150px;
+			margin-top: -150px;
+			opacity: 0.3;
+			transition: transform 1s;
+		}
+
+		.d1 div:nth-child(7) {
+			transform: translatez(-150px);
+			background: url(https://pic.baixiongz.com/uploads/2021/06/15/d9775ff37bad6.jpg) 0 0PX /cover;
+		}
+
+		.d1 div:nth-child(8) {
+			transform: rotateY(90deg) translatez(-150px);
+			background: url(https://pic.baixiongz.com/uploads/2021/06/15/29aa596ad3bd9.jpg) 0 0PX /cover;
+		}
+
+		.d1 div:nth-child(9) {
+			transform: rotateY(90deg) translatez(150px);
+			background: url(https://pic.baixiongz.com/uploads/2021/06/15/77c9e09e913b5.jpg) 0 0PX /cover;
+		}
+
+		.d1 div:nth-child(10) {
+			transform: rotatex(-90deg) translatez(150px);
+			background: url(https://pic.baixiongz.com/uploads/2021/06/15/2ca3a80c27735.jpg) 0 0PX /cover;
+		}
+
+		.d1 div:nth-child(11) {
+			transform: rotatex(-90deg) translatez(-150px);
+			background: url(https://pic.baixiongz.com/uploads/2021/06/15/1e2c76931ac03.jpg) 0 0PX /cover;
+		}
+
+		.d1 div:nth-child(12) {
+			transform: translatez(150px);
+			background: url(https://pic.baixiongz.com/uploads/2021/06/15/7782b3dac9c0b.jpg) 0 0PX /cover;
+		}
+
+		body:hover div:nth-child(7) {
+			transform: translatez(-300px) scale(1.2);
+			opacity: 0.8;
+		}
+
+		.wt:hover div:nth-child(8) {
+			transform: rotateY(90deg) translatez(-300px) scale(1.2);
+			opacity: 0.8;
+		}
+
+		.wt:hover div:nth-child(9) {
+			transform: rotateY(90deg) translatez(300px) scale(1.2);
+			opacity: 0.8;
+		}
+
+		.wt:hover div:nth-child(10) {
+			transform: rotatex(-90deg) translatez(300px) scale(1.2);
+			opacity: 0.8;
+		}
+
+		.wt:hover div:nth-child(11) {
+			transform: rotatex(-90deg) translatez(-300px) scale(1.2);
+			opacity: 0.8;
+		}
+
+		.wt:hover div:nth-child(12) {
+			transform: translatez(300px) scale(1.2);
+			opacity: 0.8;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wt">
+		<div class="d1">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<script>
+
+	</script>
+
+</body>
+
+</html>
