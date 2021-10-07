@@ -214,7 +214,7 @@ header .logo img{display: inline-block;margin: auto;padding: 10px;max-width: 210
 }
 
 .content-box.box-2 {}
-.content-box.box-2 .post{text-align: center;margin: 20px inherit; }
+.content-box.box-2 .post{text-align: center;margin: 50px inherit; }
 .content-box.box-2 img{}
 
 .content-box.box-3 {min-height: 450px;}
