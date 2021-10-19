@@ -119,15 +119,20 @@ body .wrap-body{}
 /* ---------------------------------------------------------------------------- */
 header{}
 header .wrap-header{}
-header .main-header{background: url(../images/slider2.jpg) fixed center center; background-color: #222;color:#fff;min-height: 600px;text-align: center;padding-top: 100px}
+header .main-header{background: url(../images/slider2.jpg) fixed center center; 
+                    background-color: #222;
+                    color:#fff;
+                    min-height: 600px;
+                    text-align: center; 
+                    padding-top: 30px}
 header .main-header h1{
-    font-size: 67px;
+    font-size: 76px;
     margin-top: 20px;
     margin-right: 0;
     margin-left: 0;
     margin-bottom: -62px;
     line-height: 1.2;
-    font-weight: 500;
+    font-weight: 600;
     font-style: oblique;
     color: #FFFFFF;
 }
@@ -190,13 +195,37 @@ header .logo img{display: inline-block;margin: auto;padding: 10px;max-width: 210
     text-decoration: none;
     text-indent: 2em;
     line-height: 40px;
+   
 
 }
 
 /* 2 鼠标经过链接变换背景颜色 */
 .boxtl:hover {
     background-color: #dbbfac;
-}
+    backdrop-filter:blur(50px);
+    z-index: -1;
+    margin: -30px;
+    }
+
+    
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #wrap1 {
