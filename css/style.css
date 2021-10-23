@@ -202,9 +202,6 @@ header .logo img{display: inline-block;margin: auto;padding: 10px;max-width: 210
 /* 2 鼠标经过链接变换背景颜色 */
 .boxtl:hover {
     background-color: #dbbfac;
-    backdrop-filter:blur(50px);
-    z-index: -1;
-    margin: -30px;
     }
 
     
