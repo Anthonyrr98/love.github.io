@@ -11,15 +11,9 @@
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link rel="icon" href="images/gallery.icon" type="image/x-icon" />
   <link href="styles/main.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/page.css">
 </head>
 
-<body id="top"><div style="text-align: center;margin:250px auto;">
-  <div id="pager" class="pager clearfix">
-  </div>
-</div>
-
-
+<body id="top">
   <div class="page">
     <header>
       <div class="pp-header">
@@ -61,7 +55,7 @@
           <div class="pp-category-filter">
             <div class="row">
               <div class="col-sm-12">
-                <a class="btn btn-primary pp-filter-button" href="#" data-filter="all"> 全部 </a>    
+                <a class="btn btn-primary pp-filter-button" href="#" data-filter="kaifeng"> 全部 </a>    
                 <a class="btn btn-outline-primary pp-filter-button" href="#" data-filter="kaifeng">开封</a>
                 <a class="btn btn-outline-primary pp-filter-button" href="#" data-filter="xian">西安</a>
                 <a class="btn btn-outline-primary pp-filter-button" href="#" data-filter="huashan">华山</a>
@@ -1379,24 +1373,5 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="scripts/main.js"></script>
 </body>
-
-<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-	<script src="js/jquery.z-pager.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript">
-		$("#pager").zPager({
-			totalData: 50,
-			htmlBox: $('#wraper'),
-			btnShow: true,
-			ajaxSetData: false
-		});
-		
-		function currentPage(currentPage){
-			/*
-				触发页码数位置： Page/js/jquery.z-pager.js 64行
-			*/
-			console.log("当前页码数：" + currentPage);
-		}
-		
-	</script>
 
 </html>
