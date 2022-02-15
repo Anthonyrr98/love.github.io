@@ -115,11 +115,12 @@ body {background: #fff;color: #3F3F3F;font: 14px/25px Arial, Helvetica, sans-ser
 body .wrap-body{}
 
 /* ---------------------------------------------------------------------------- */
+
 /* -------------------------------------Header--------------------------------- */
 /* ---------------------------------------------------------------------------- */
 header{}
 header .wrap-header{}
-header .main-header{background: url(../images/slider2.jpg) fixed center center; 
+header .main-header{background: url(../images/beijing/slider2.jpg) fixed center center; 
                     background-color: #222;
                     color:#fff;
                     min-height: 600px;

@@ -63,14 +63,14 @@
 .pager .pg-prev,
 .pager .pg-next,
 .pager .pg-last {
-	background: white url(../images/page_bg.jpg)  8px 7px no-repeat;
+	background: white url(../images/gallery/page_bg.jpg)  8px 7px no-repeat;
 }
 
 .pager .pg-first:hover,
 .pager .pg-prev:hover,
 .pager .pg-next:hover,
 .pager .pg-last:hover {
-	background: white url(../images/page_bg_hover.jpg)  8px 7px no-repeat;
+	background: white url(../images/gallery/page_bg_hover.jpg)  8px 7px no-repeat;
 }
 
 .pager .pg-prev,
@@ -91,13 +91,13 @@
 .pager .pg-prev[disabled='true'],
 .pager .pg-prev[disabled='true']:hover {
 	cursor: default;
-	background-image: url(../images/page_bg.jpg);
+	background-image: url(../images/gallery/page_bg.jpg);
 }
 
 .pager .pg-next[disabled='true'],
 .pager .pg-next[disabled='true']:hover {
 	cursor: default;
-	background-image: url(../images/page_bg.jpg);
+	background-image: url(../images/gallery/page_bg.jpg);
 }
 
 .pager .pg-prev[disabled='true'],
