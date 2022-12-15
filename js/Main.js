@@ -38,7 +38,7 @@
 		var x = e.clientX;
 		var y = e.clientY;
 
-		createFireworks(x, y, ["段雅楠", "我爱你", "永远", "一百天快乐", "小楠楠"][Math.floor(Math.random() * 5)]);
+		createFireworks(x, y, ["段雅楠", "我爱你", "永远", "六百天快乐", "小楠楠"][Math.floor(Math.random() * 5)]);
 	}
 	document.addEventListener("mousedown", mouseDownHandler);
 
@@ -113,7 +113,7 @@
 				p.size = Math.random() * 2 + 1;
 
 				//速度
-				p.speed = Math.random() * 25 + .4;
+				p.speed = Math.random() * 30 + .4;
 
 				//半径
 				p.radius = Math.random() * 81 + 50;
@@ -155,7 +155,7 @@
 	//requestAnimationFrame
 	var lastStamp = 0;
 	function tick(opt = 0) {
-		if (opt - lastStamp > 2000) {
+		if (opt - lastStamp > 200) {
 			lastStamp = opt;
 			createFireworks(Math.random() * canvas.width, Math.random() * canvas.height);
 		}
