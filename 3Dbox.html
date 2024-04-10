@@ -1,0 +1,179 @@
+﻿<!doctype html>
+<html>
+
+<head>
+
+
+	<link rel="icon" href="images/biaoqianlanicon/caidan1.icon" type="image/x-icon" />
+
+	<meta charset="utf-8">
+	<title>一个神秘的盒子</title>
+	<script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+	<style>
+		@keyframes xuanz {
+			0% {
+				transform: rotateY(0deg) rotatex(15deg);
+			}
+
+			100% {
+				transform: rotateY(360deg) rotatex(15deg);
+			}
+		}
+
+		.wt {
+			perspective: 800px;
+		}
+
+		.d1 {
+			transform-style: preserve-3d;
+			position: relative;
+			width: 200px;
+			height: 200px;
+			margin: 400px auto;
+			animation: xuanz 10s infinite linear;
+		}
+
+		.d1 div {
+
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+
+		.d1 div:nth-child(1) {
+			transform: translatez(-100px);
+			background: url(https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldyn/3dbox/1.jpg) 0 0PX /cover;
+		}
+
+		.d1 div:nth-child(2) {
+			transform: rotateY(90deg) translatez(-100px);
+			background: url(https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldyn/3dbox/2.jpg) 0 0PX /cover;
+		}
+
+		.d1 div:nth-child(3) {
+			transform: rotateY(90deg) translatez(100px);
+			background: url(https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldyn/3dbox/3.jpg) 0 0PX /cover;
+		}
+
+		.d1 div:nth-child(4) {
+			transform: rotatex(-90deg) translatez(100px);
+			background: url(https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldyn/3dbox/4.jpg) 0 0PX /cover;
+		}
+
+		.d1 div:nth-child(5) {
+			transform: rotatex(-90deg) translatez(-100px);
+			background: url(https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldyn/3dbox/5.jpg) 0 0PX /cover;
+		}
+
+		.d1 div:nth-child(6) {
+			transform: translatez(100px);
+			background: url(https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldyn/3dbox/6.jpg) 0 0PX /cover;
+		}
+
+		.d1 div:nth-child(7),
+		div:nth-child(8),
+		div:nth-child(9),
+		div:nth-child(10),
+		div:nth-child(11),
+		div:nth-child(12) {
+			width: 300px;
+			height: 300px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -150px;
+			margin-top: -150px;
+			opacity: 0.3;
+			transition: transform 1s;
+		}
+
+		.d1 div:nth-child(7) {
+			transform: translatez(-150px);
+			background: url(https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldyn/3dbox/7.jpg) 0 0PX /cover;
+		}
+
+		.d1 div:nth-child(8) {
+			transform: rotateY(90deg) translatez(-150px);
+			background: url(https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldyn/3dbox/8.jpg) 0 0PX /cover;
+		}
+
+		.d1 div:nth-child(9) {
+			transform: rotateY(90deg) translatez(150px);
+			background: url(https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldyn/3dbox/9.jpg) 0 0PX /cover;
+		}
+
+		.d1 div:nth-child(10) {
+			transform: rotatex(-90deg) translatez(150px);
+			background: url(https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldyn/3dbox/10.jpg) 0 0PX /cover;
+		}
+
+		.d1 div:nth-child(11) {
+			transform: rotatex(-90deg) translatez(-150px);
+			background: url(https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldyn/3dbox/11.jpg) 0 0PX /cover;
+		}
+
+		.d1 div:nth-child(12) {
+			transform: translatez(150px);
+			background: url(https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldyn/3dbox/12.jpg) 0 0PX /cover;
+		}
+
+		body:hover div:nth-child(7) {
+			transform: translatez(-300px) scale(1.2);
+			opacity: 0.8;
+		}
+
+		.wt:hover div:nth-child(8) {
+			transform: rotateY(90deg) translatez(-300px) scale(1.2);
+			opacity: 0.8;
+		}
+
+		.wt:hover div:nth-child(9) {
+			transform: rotateY(90deg) translatez(300px) scale(1.2);
+			opacity: 0.8;
+		}
+
+		.wt:hover div:nth-child(10) {
+			transform: rotatex(-90deg) translatez(300px) scale(1.2);
+			opacity: 0.8;
+		}
+
+		.wt:hover div:nth-child(11) {
+			transform: rotatex(-90deg) translatez(-300px) scale(1.2);
+			opacity: 0.8;
+		}
+
+		.wt:hover div:nth-child(12) {
+			transform: translatez(300px) scale(1.2);
+			opacity: 0.8;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wt">
+		<div class="d1">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<script>
+
+	</script>
+
+</body>
+
+</html>
