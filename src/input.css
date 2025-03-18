@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-full font-medium transition-all duration-300;
+  }
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-opacity-90;
+  }
+  .btn-secondary {
+    @apply bg-secondary text-white hover:bg-opacity-90;
+  }
+  
+  /* 熊和兔子动画相关样式 */
+  .emojis-container {
+    @apply text-4xl relative cursor-pointer select-none flex items-center gap-0 -ml-[5px] flex-shrink-0;
+  }
+  .bear-emoji {
+    @apply inline-block m-0 p-0 transition-transform duration-300;
+  }
+  .rabbit-emoji {
+    @apply inline-block m-0 p-0 -ml-[7px] transition-transform duration-300;
+  }
+  .names {
+    @apply text-sm flex flex-col font-bubblegum font-bold tracking-wider ml-[5px];
+  }
+  .rong-li {
+    @apply text-primary mr-0 mb-[2px] rotate-[-2deg] shadow-sm;
+  }
+  .ya-nan {
+    @apply text-secondary rotate-[2deg] shadow-sm;
+  }
+  .decorations {
+    @apply text-xs text-accent;
+  }
+} 
