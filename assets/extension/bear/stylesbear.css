@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 160px;
+  background-color: #fff5f8;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  max-width: 160px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 5px;
+}
+
+.emojis-container {
+  font-size: 25px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-left: -3px;
+  flex-shrink: 0;
+}
+
+.bear-emoji {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  transition: transform 0.3s;
+}
+
+.rabbit-emoji {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-left: -7px;
+  transition: transform 0.3s;
+}
+
+.names {
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Bubblegum Sans', 'Comic Sans MS', cursive;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-left: 5px;
+}
+
+.rong-li {
+  color: #99cdca;
+  margin-right: 0;
+  margin-bottom: 2px;
+  transform: rotate(-2deg);
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.ya-nan {
+  color: #f5a592;
+  transform: rotate(2deg);
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.decorations {
+  font-size: 8px;
+  color: #E75480;
+} 
