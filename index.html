@@ -6,24 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>老赵赵和小楠楠 | 主页</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/apple-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/picture/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/picture/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/picture/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/picture/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/picture/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/picture/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/picture/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/picture/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/picture/apple-icon-180x180.png">
     
            
     
     
     
-    <link rel="manifest" href="assets/images/favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/apple-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="assets/picture/apple-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="assets/css/tailwind.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/mobile.css">
@@ -41,7 +41,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheetbear" href="assets/extension/bear/stylesbear.css">
+    <link rel="stylesheet" href="assets/extension/bear/stylesbear.css">
 
     <style>
         /* 熊和兔子动画相关样式 */
@@ -228,30 +228,11 @@
         }
     </style>
 
-    <!-- 百度统计 -->
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?ee188db572c3ee9595b1c83e23818285";
-    var s = document.getElementsByTagName("script")[0]; 
-    s.parentNode.insertBefore(hm, s);
-    })();
-    </script>
-
-    <!-- 51la统计 -->
-    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-    <script>LA.init({id:"3MFAKI0UOTNbscnK",ck:"3MFAKI0UOTNbscnK"})</script>
-
-
 </head>
 
 <body>
     <!-- HEADER-SECTION -->
     <div class="home-header-section">
-        <!-- <figure class="banner-right-img left_icon img">
-            <img src="./assets/images/header-right-img.png" alt="" class="star">
-        </figure> -->
         <div class="header-top header-top1">
             <div class="container">
                 <div class="row">
@@ -268,7 +249,7 @@
             <div class="main-header">
                 <div class="container">
                     <nav class="navbar navbar-expand-lg navbar-light p-0">
-                        <a class="navbar-brand pt-0" href="javascript:void(0);"><div class="container">
+                        <a class="navbar-brand pt-0" href="#home" aria-label="返回主页"><div class="container">
                             <div class="emojis-container">
                               <span class="bear-emoji" id="bearEmoji" onclick="animateBear(this)">🐻</span>
                               <span class="rabbit-emoji" id="rabbitEmoji" onclick="animateRabbit(this)">🐰</span>
@@ -292,34 +273,31 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item active">
-                                    <a class="nav-link text-decoration-none navbar-text-color home-margin-top" href="javascript:void(0);">主页<span class="sr-only">(current)</span></a>
+                                    <a class="nav-link text-decoration-none navbar-text-color home-margin-top" href="#home">主页<span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-decoration-none navbar-text-color" href="javascript:void(0);">时间线</a>
+                                    <a class="nav-link text-decoration-none navbar-text-color" href="#timeline">时间线</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-decoration-none navbar-text-color" href="javascript:void(0);">足迹</a>
+                                    <a class="nav-link text-decoration-none navbar-text-color" href="#footprints">足迹</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-decoration-none navbar-text-color" href="https://zrldyn.com/gallery/kaifeng.html">PLOG</a>
+                                    <a class="nav-link text-decoration-none navbar-text-color" href="gallery/kaifeng.html">PLOG</a>
                                 </li>
                                 
                                 <li class="nav-item dropdown redlight-dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">未完待续</a>
+                                    <button class="nav-link dropdown-toggle border-0 bg-transparent" id="navbarDropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">未完待续</button>
                                     <div class="dropdown-menu dropdown-content-redlight">
                                         <ul class="list-unstyled">
-                                            <li class="nav-item"> <a class="dropdown-item nav-link" href="">comming-soon</a></li>
-                                            <li class="nav-item"> <a class="dropdown-item nav-link" href="">comming-soon</a></li>
-                                            <li class="nav-item"> <a class="dropdown-item nav-link" href="">comming-soon</a></li>        
-                                            <li class="nav-item"> <a class="dropdown-item nav-link" href="">comming-soon</a></li>
+                                            <li class="nav-item"><span class="dropdown-item nav-link" aria-disabled="true">敬请期待</span></li>
                                         </ul>
                                     </div>
                                 </li>
                             </ul>
                             <div class="btn-talk ml-auto">
                                 <ul class="m-0 p-0">
-                                    <li class="list-unstyled d-lg-inline-block"><a class="nav-link contact" href="">旧版的网站</a></li>
-                                    <li class="icon-search"><a href="" class="text-decoration-none play-button"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                    <li class="list-unstyled d-lg-inline-block"><a class="nav-link contact" href="#memories">旧版回忆</a></li>
+                                    <li class="icon-search"><a href="#gallery" class="text-decoration-none play-button" aria-label="查看照片"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -328,12 +306,12 @@
             </div>
         </header>
         <!-- BANNER-SECTION -->
-        <div class="home-banner-section overflow-hidden position-relative">
+        <div class="home-banner-section overflow-hidden position-relative" id="home">
             <figure class="banner-img1 mb-0">
-                <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/banner-img1.png" alt="" class="star">
+                <img loading="lazy" decoding="async" src="assets/picture/banner-img1.png" alt="" class="star">
             </figure>
             <figure class="banner-img2 mb-0">
-                <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/banner-img2.png" alt="" class="star">
+                <img loading="lazy" decoding="async" src="assets/picture/banner-img2.png" alt="" class="star">
             </figure>
             <div class="banner-container-box">
                 <div class="container">
@@ -342,14 +320,14 @@
 
                             <div class="banner-img-content position-relative">
                                 <figure class="banner-img mb-0">
-                                    <img class="img-fluid banner-img-width" src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/homepage1.jpg" alt="">
+                                    <img fetchpriority="high" class="img-fluid banner-img-width" src="assets/picture/homepage1.jpg" alt="">
                                 </figure>
                             </div>
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 order-lg-2 order-1">
                             <div class="home-banner-text position-relative" data-aos="fade-up" id="myContentDIV">
                                 <figure class="ring-icon-img mb-0">
-                                    <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/ring-icon-banner.png" alt="">
+                                    <img loading="lazy" decoding="async" src="assets/picture/ring-icon-banner.png" alt="">
                                 </figure>
                                 <h1>赵荣力和段雅楠的故事 <span class="h1-text">还在讲述!</span></h1>
                                 <p class="banner-paragraph">
@@ -366,7 +344,7 @@
         </div>
 
         <!-- About-us-section -->
-        <div class="about-section">
+        <div class="about-section" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 order-lg-1 order-1">
@@ -381,13 +359,13 @@
                     </div>
                     <div class="col-xl-6 col-lg-5 col-md-12 col-sm-12 order-lg-2 order-2">
                         <div class="about-content-img">
-                            <figure class="mb-0 about-section-f1"><img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/about-bird-icon.png" alt="" class="star">
+                            <figure class="mb-0 about-section-f1"><img loading="lazy" decoding="async" src="assets/picture/about-bird-icon.png" alt="" class="star">
                             </figure>
-                            <figure class="mb-0 about-section-f2"><img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/homepage2.png" alt="">
+                            <figure class="mb-0 about-section-f2"><img loading="lazy" decoding="async" src="assets/picture/homepage2.png" alt="">
                             </figure>
-                            <figure class="mb-0 about-section-f3"><img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/homepage3.png" alt="">
+                            <figure class="mb-0 about-section-f3"><img loading="lazy" decoding="async" src="assets/picture/homepage3.png" alt="">
                             </figure>
-                            <figure class="mb-0 about-section-f4"><img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/homepage4.png" alt="">
+                            <figure class="mb-0 about-section-f4"><img loading="lazy" decoding="async" src="assets/picture/homepage4.png" alt="">
                             </figure>
                         </div>
                     </div>
@@ -402,11 +380,11 @@
                 <div class="col-12">
                     <div class="video-section-conten" data-aos="fade-up">
                         <figure class="mb-0 video-section-image">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/video.png" alt="" class="fluid-img">
+                            <img loading="lazy" decoding="async" src="assets/picture/video.png" alt="" class="fluid-img">
                         </figure>
-                        <a class="popup-vimeo" href="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/file/kaixin.mp4">
+                        <a class="popup-vimeo" href="assets/file/kaixin.mp4">
                             <figure class="mb-0 vide-play-img">
-                                <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/video-play-icon.png" alt="" class="fluid-img">
+                                <img loading="lazy" decoding="async" src="assets/picture/video-play-icon.png" alt="" class="fluid-img">
                             </figure>
                         </a>
                     </div>
@@ -416,12 +394,12 @@
         </div>
     </div>
     <!-- Categories-SECTION -->
-    <section class="categories-section overflow-hidden position-relative">
+    <section class="categories-section overflow-hidden position-relative" id="footprints">
         <figure class="hearts-img">
-            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/categories-img1.png" alt="" class="star">
+            <img loading="lazy" decoding="async" src="assets/picture/categories-img1.png" alt="" class="star">
         </figure>
         <figure class="design-img">
-            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/categories-img6.png" alt="" class="star">
+            <img loading="lazy" decoding="async" src="assets/picture/categories-img6.png" alt="" class="star">
         </figure>
         <div class="container">
             <div class="row">
@@ -429,14 +407,14 @@
                     <div class="about-us-content" data-aos="fade-up">
                         <div class="cate-icon-outer">
                             <figure class="cate-icon-img mb-0">
-                                <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/categories-logo-img.png" alt="">
+                                <img loading="lazy" decoding="async" src="assets/picture/categories-logo-img.png" alt="">
                             </figure>
                         </div>
                         <h2>我们的旅行日记
                         </h2>
                         <p class="aboutus-p">这么长时间来我们一同走过了很多地方，之后还会一起走过更多地方！</p>
                         <div class="banner-btn discover-btn-banner">
-                            <a href="https://zrldyn.com/gallery/kaifeng.html" class="text-decoration-none">去看看山和湖海吧</a>
+                            <a href="gallery/kaifeng.html" class="text-decoration-none">去看看山和湖海吧</a>
                         </div>
                     </div>
                 </div>
@@ -445,13 +423,13 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="card card1">
-                                    <a href="#" style="text-decoration:none;">
-                                    <figure class="mb-0 category-section-f2"><img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/Categories1.png" alt=""></figure>
+                                    <a href="gallery/kaifeng.html" style="text-decoration:none;">
+                                    <figure class="mb-0 category-section-f2"><img loading="lazy" decoding="async" src="assets/picture/Categories1.png" alt=""></figure>
                                     <h6>西安</h6></a>
                                 </div>
                                 <div class="card card2">
-                                    <a href="#" style="text-decoration:none;">
-                                    <figure class="mb-0 category-section-f3"><img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/Categories4.png" alt=""></figure>
+                                    <a href="gallery/xian.html" style="text-decoration:none;">
+                                    <figure class="mb-0 category-section-f3"><img loading="lazy" decoding="async" src="assets/picture/Categories4.png" alt=""></figure>
                                     <h6>兰州</h6></a>
                                 </div>
                             </div>
@@ -460,13 +438,13 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="card card3">
-                                    <a href="#" style="text-decoration:none;">
-                                    <figure class="mb-0 category-section-f4"><img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/Categories3.png" alt=""></figure>
+                                    <a href="gallery/guizhou.html" style="text-decoration:none;">
+                                    <figure class="mb-0 category-section-f4"><img loading="lazy" decoding="async" src="assets/picture/Categories3.png" alt=""></figure>
                                     <h6>青海</h6></a>
                                 </div>
                                 <div class="card card4">
-                                    <a href="#" style="text-decoration:none;">
-                                    <figure class="mb-0 category-section-f5"><img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/Categories2.png" alt=""></figure>
+                                    <a href="gallery/qinghai.html" style="text-decoration:none;">
+                                    <figure class="mb-0 category-section-f5"><img loading="lazy" decoding="async" src="assets/picture/Categories2.png" alt=""></figure>
                                     <h6>漯河</h6></a>
                                 </div>
                             </div>
@@ -477,12 +455,12 @@
         </div>
     </section>
     <!--make-reservation-section -->
-    <div class="reservation-section overflow-hidden">
+    <div class="reservation-section overflow-hidden" id="timeline">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <figure class="mb-0 reservation-logo">
-                        <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/reservation-logo.png" alt="">
+                        <img loading="lazy" decoding="async" src="assets/picture/reservation-logo.png" alt="">
                     </figure>
                     <h2 class="text-center">四季记忆</h2>
                     <div class="text-center mb-4">
@@ -503,12 +481,12 @@
                 <div class="row" data-aos="fade-up">
                     <div class="col-lg-7 col-md-5 col-sm-12">
                         <figure class="reservation-img2">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/2023xia.jpg" alt="" class="img-fluid">
+                            <img loading="lazy" decoding="async" src="assets/picture/2023xia.jpg" alt="" class="img-fluid">
                             <div class="season-tag">2021年夏</div>
                         </figure>
                         
                         <figure class="reservation-img2">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/2023qiu.png" alt="" class="img-fluid">
+                            <img loading="lazy" decoding="async" src="assets/picture/2023qiu.png" alt="" class="img-fluid">
                             <div class="season-tag">2021年秋</div>
                         </figure>
                         
@@ -516,11 +494,11 @@
                     
                     <div class="col-lg-5 col-md-5 col-sm-12">
                         <figure class="reservation-img2">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/2023chun.png" alt="" class="img-fluid">
+                            <img loading="lazy" decoding="async" src="assets/picture/2023chun.png" alt="" class="img-fluid">
                             <div class="season-tag">2021年春</div>
                         </figure>
                         <figure class="mb-0 reservation-img3">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/2023dong.png" alt="" class="img-fluid">
+                            <img loading="lazy" decoding="async" src="assets/picture/2023dong.png" alt="" class="img-fluid">
                             <div class="season-tag">2021年冬</div>
                         </figure>
                     </div>
@@ -532,12 +510,12 @@
                 <div class="row" data-aos="fade-up">
                     <div class="col-lg-7 col-md-5 col-sm-12">
                         <figure class="reservation-img2">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/2023xia.jpg" alt="" class="img-fluid">
+                            <img loading="lazy" decoding="async" src="assets/picture/2023xia.jpg" alt="" class="img-fluid">
                             <div class="season-tag">2022年夏</div>
                         </figure>
                         
                         <figure class="reservation-img2">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/2023qiu.png" alt="" class="img-fluid">
+                            <img loading="lazy" decoding="async" src="assets/picture/2023qiu.png" alt="" class="img-fluid">
                             <div class="season-tag">2022年秋</div>
                         </figure>
                         
@@ -545,11 +523,11 @@
                     
                     <div class="col-lg-5 col-md-5 col-sm-12">
                         <figure class="reservation-img2">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/2023chun.png" alt="" class="img-fluid">
+                            <img loading="lazy" decoding="async" src="assets/picture/2023chun.png" alt="" class="img-fluid">
                             <div class="season-tag">2022年春</div>
                         </figure>
                         <figure class="mb-0 reservation-img3">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/2023dong.png" alt="" class="img-fluid">
+                            <img loading="lazy" decoding="async" src="assets/picture/2023dong.png" alt="" class="img-fluid">
                             <div class="season-tag">2022年冬</div>
                         </figure>
                     </div>
@@ -561,12 +539,12 @@
                 <div class="row" data-aos="fade-up">
                     <div class="col-lg-7 col-md-5 col-sm-12">
                         <figure class="reservation-img2">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/2023xia.jpg" alt="" class="img-fluid">
+                            <img loading="lazy" decoding="async" src="assets/picture/2023xia.jpg" alt="" class="img-fluid">
                             <div class="season-tag">2023年夏</div>
                         </figure>
                         
                         <figure class="reservation-img2">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/2023qiu.png" alt="" class="img-fluid">
+                            <img loading="lazy" decoding="async" src="assets/picture/2023qiu.png" alt="" class="img-fluid">
                             <div class="season-tag">2023年秋</div>
                         </figure>
                         
@@ -574,11 +552,11 @@
                     
                     <div class="col-lg-5 col-md-5 col-sm-12">
                         <figure class="reservation-img2">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/2023chun.png" alt="" class="img-fluid">
+                            <img loading="lazy" decoding="async" src="assets/picture/2023chun.png" alt="" class="img-fluid">
                             <div class="season-tag">2023年春</div>
                         </figure>
                         <figure class="mb-0 reservation-img3">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/2023dong.png" alt="" class="img-fluid">
+                            <img loading="lazy" decoding="async" src="assets/picture/2023dong.png" alt="" class="img-fluid">
                             <div class="season-tag">2023年冬</div>
                         </figure>
                     </div>
@@ -590,12 +568,12 @@
                 <div class="row" data-aos="fade-up">
                     <div class="col-lg-7 col-md-5 col-sm-12">
                         <figure class="reservation-img2">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/2023xia.jpg" alt="" class="img-fluid">
+                            <img loading="lazy" decoding="async" src="assets/picture/2023xia.jpg" alt="" class="img-fluid">
                             <div class="season-tag">2024年夏</div>
                         </figure>
                         
                         <figure class="reservation-img2">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/2023qiu.png" alt="" class="img-fluid">
+                            <img loading="lazy" decoding="async" src="assets/picture/2023qiu.png" alt="" class="img-fluid">
                             <div class="season-tag">2024年秋</div>
                         </figure>
                         
@@ -603,11 +581,11 @@
                     
                     <div class="col-lg-5 col-md-5 col-sm-12">
                         <figure class="reservation-img2">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/2023chun.png" alt="" class="img-fluid">
+                            <img loading="lazy" decoding="async" src="assets/picture/2023chun.png" alt="" class="img-fluid">
                             <div class="season-tag">2024年春</div>
                         </figure>
                         <figure class="mb-0 reservation-img3">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/2023dong.png" alt="" class="img-fluid">
+                            <img loading="lazy" decoding="async" src="assets/picture/2023dong.png" alt="" class="img-fluid">
                             <div class="season-tag">2024年冬</div>
                         </figure>
                     </div>
@@ -619,12 +597,12 @@
                 <div class="row" data-aos="fade-up">
                     <div class="col-lg-7 col-md-5 col-sm-12">
                         <figure class="reservation-img2">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/2023xia.jpg" alt="" class="img-fluid">
+                            <img loading="lazy" decoding="async" src="assets/picture/2023xia.jpg" alt="" class="img-fluid">
                             <div class="season-tag">2025年夏</div>
                         </figure>
                         
                         <figure class="reservation-img2">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/2023qiu.png" alt="" class="img-fluid">
+                            <img loading="lazy" decoding="async" src="assets/picture/2023qiu.png" alt="" class="img-fluid">
                             <div class="season-tag">2025年秋</div>
                         </figure>
                         
@@ -632,11 +610,11 @@
                     
                     <div class="col-lg-5 col-md-5 col-sm-12">
                         <figure class="reservation-img2">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/2023chun.png" alt="" class="img-fluid">
+                            <img loading="lazy" decoding="async" src="assets/picture/2023chun.png" alt="" class="img-fluid">
                             <div class="season-tag">2025年春</div>
                         </figure>
                         <figure class="mb-0 reservation-img3">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/2023dong.png" alt="" class="img-fluid">
+                            <img loading="lazy" decoding="async" src="assets/picture/2023dong.png" alt="" class="img-fluid">
                             <div class="season-tag">2025年冬</div>
                         </figure>
                     </div>
@@ -648,12 +626,12 @@
                 <div class="row" data-aos="fade-up">
                     <div class="col-lg-7 col-md-5 col-sm-12">
                         <figure class="reservation-img2">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/2023xia.jpg" alt="" class="img-fluid">
+                            <img loading="lazy" decoding="async" src="assets/picture/2023xia.jpg" alt="" class="img-fluid">
                             <div class="season-tag">2026年夏</div>
                         </figure>
                         
                         <figure class="reservation-img2">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/2023qiu.png" alt="" class="img-fluid">
+                            <img loading="lazy" decoding="async" src="assets/picture/2023qiu.png" alt="" class="img-fluid">
                             <div class="season-tag">2026年秋</div>
                         </figure>
                         
@@ -661,11 +639,11 @@
                     
                     <div class="col-lg-5 col-md-5 col-sm-12">
                         <figure class="reservation-img2">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/2023chun.png" alt="" class="img-fluid">
+                            <img loading="lazy" decoding="async" src="assets/picture/2023chun.png" alt="" class="img-fluid">
                             <div class="season-tag">2026年春</div>
                         </figure>
                         <figure class="mb-0 reservation-img3">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/2023dong.png" alt="" class="img-fluid">
+                            <img loading="lazy" decoding="async" src="assets/picture/2023dong.png" alt="" class="img-fluid">
                             <div class="season-tag">2026年冬</div>
                         </figure>
                     </div>
@@ -673,7 +651,7 @@
             </div>
 
             <div class="banner-btn discover-btn-banner">
-                <a href="" class="text-decoration-none">那就回忆一下吧</a>
+                <a href="#memories" class="text-decoration-none">那就回忆一下吧</a>
             </div>
         </div>
     </div>
@@ -681,22 +659,22 @@
     
 
     <!-- 网站的由来 -->
-    <section class="story-section overflow-hidden position-relative">
+    <section class="story-section overflow-hidden position-relative" id="memories">
         <div class="container">
             <div class="row">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <figure class="mb-0 about-section-f1"><img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/about-bird-icon.png" alt="" class="star">
+                    <figure class="mb-0 about-section-f1"><img loading="lazy" decoding="async" src="assets/picture/about-bird-icon.png" alt="" class="star">
                     </figure>
                     <div class="story-card-content aos-init aos-animate" data-aos="fade-up">
                         <figure class="story-card-img">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/story-card-img.png" alt="">
+                            <img loading="lazy" decoding="async" src="assets/picture/story-card-img.png" alt="">
                         </figure>
                         <h3>网站的由来</h3>
                         <p>我们的第一版网站开始于2021年的6月14号，只有一个主页和十几张照片。
                            经过几年的爱情长跑，我们积攒了上万张照片，于是我就把这些照片放在这里，就叫做我们的"秘密基地"吧！
                         </p>
                         <div class="banner-btn discover-btn-banner">
-                            <a href="" class="text-decoration-none"><i class="fa fa-play"></i>来看看旧版的网站吧</a>
+                            <a href="#gallery" class="text-decoration-none"><i class="fa fa-play" aria-hidden="true"></i>继续看看我们的照片吧</a>
                         </div>
                     </div>
                 </div>
@@ -705,12 +683,12 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <figure class="mb-0 story-img1">
-                                    <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/story-section-img1.jpg" alt="" class="img-fluid">
+                                    <img loading="lazy" decoding="async" src="assets/picture/story-section-img1.jpg" alt="" class="img-fluid">
                                 </figure>
                             </div>
                             <div class="carousel-item">
                                 <figure class="mb-0 story-img1">
-                                    <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/story-section-img2.jpg" alt="" class="img-fluid">
+                                    <img loading="lazy" decoding="async" src="assets/picture/story-section-img2.jpg" alt="" class="img-fluid">
                                 </figure>
                             </div>
                         </div>
@@ -730,22 +708,22 @@
     
     <!-- 音乐 -->
     
-    <section class="form-section overflow-hidden">
+    <section class="form-section overflow-hidden" id="music">
         <figure class="hearts-img">
-            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/categories-img1.png" alt="" class="star">
+            <img loading="lazy" decoding="async" src="assets/picture/categories-img1.png" alt="" class="star">
         </figure>
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                     <div class="about-section-form position-relative" data-aos="fade-up">
                         <figure class="cate-icon-img">
-                            <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/categories-logo-img.png" alt="">
+                            <img loading="lazy" decoding="async" src="assets/picture/categories-logo-img.png" alt="">
                         </figure>
                         <h2 class="contact-us-title">我们一起听过的歌</h2>
                         <p>这首歌见证着我们相遇，相识与相爱。 </p>
                         <form id="form_id" method="post" action="javascript:;">
                             <div class="banner-btn discover-btn-banner">
-                                <a href="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/extension/home-music/mp3.mp3" download="mp3.mp3"><button type="submit" class="btn btn-primary">下载下来听听吧</button></a>
+                                <a href="assets/extension/home-music/mp3.mp3" download="我们的歌.mp3" class="btn btn-primary">下载下来听听吧</a>
                             </div>
                         </form>
                     </div>
@@ -762,7 +740,7 @@
                             <div class="player__albumImg active-song" 
                                       data-author="盘尼西林"
                                       data-song="再谈记忆"
-                                      data data-src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/extension/home-music/mp3.mp3" style="background-image: url(https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/extension/home-music/img/sia.jpg)"> </div>
+                                      data-src="assets/extension/home-music/mp3.mp3" style="background-image: url(assets/extension/home-music/img/sia.jpg)"> </div>
                                       <!-- 第二首歌
                             <div class="player__albumImg" 
                                       data-author="盘尼西林"
@@ -814,16 +792,16 @@
    
 
     <!-- Instagram-feed-section -->
-    <section class="insta-feed-section text-center" style="padding: 20px 0;">
+    <section class="insta-feed-section text-center" id="gallery" style="padding: 20px 0;">
         
         <div class="container">
             <div class="row justify-content-center" style="margin-bottom: 10px;">
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <figure class="mb-0 insta-bird-fig d-flex justify-content-center" style="margin-bottom: 5px;">
-                        <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/insta-bird-img.png" alt="" class="star">
+                        <img loading="lazy" decoding="async" src="assets/picture/insta-bird-img.png" alt="" class="star">
                     </figure>
                     <figure class="insta-fig d-flex justify-content-center" style="margin-bottom: 5px;">
-                        <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/insta-icon.png" alt="">
+                        <img loading="lazy" decoding="async" src="assets/picture/insta-icon.png" alt="">
                     </figure>
                 </div>
             </div>
@@ -831,33 +809,33 @@
             <div class="row justify-content-center" style="max-width: 1100px; margin: 0 auto;">
                 <div class="col-lg-3 col-md-3 col-sm-6" style="padding: 5px;">
                     <figure class="mb-0 insta-section-imgs" style="height: 340px; overflow: hidden;">
-                        <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/ins1.jpg" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img loading="lazy" decoding="async" src="assets/picture/ins1.jpg" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
                         <div class="hover_box_plus">
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="gallery/kaifeng.html" aria-label="查看开封相册"><i class="fa-solid fa-images" aria-hidden="true"></i></a>
                         </div>
                     </figure>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6" style="padding: 5px;">
                     <figure class="mb-0 insta-section-imgs" style="height: 340px; overflow: hidden;">
-                        <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/ins2.jpg" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img loading="lazy" decoding="async" src="assets/picture/ins2.jpg" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
                         <div class="hover_box_plus">
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="gallery/xian.html" aria-label="查看西安相册"><i class="fa-solid fa-images" aria-hidden="true"></i></a>
                         </div>
                     </figure>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6" style="padding: 5px;">
                     <figure class="mb-0 insta-section-imgs insta-section-imgs-mb" style="height: 340px; overflow: hidden;">
-                        <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/ins3.jpg" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img loading="lazy" decoding="async" src="assets/picture/ins3.jpg" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
                         <div class="hover_box_plus">
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="gallery/guizhou.html" aria-label="查看贵州相册"><i class="fa-solid fa-images" aria-hidden="true"></i></a>
                         </div>
                     </figure>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6" style="padding: 5px;">
                     <figure class="mb-0 insta-section-imgs insta-section-imgs-mb" style="height: 340px; overflow: hidden;">
-                        <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/ins4.jpg" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img loading="lazy" decoding="async" src="assets/picture/ins4.jpg" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
                         <div class="hover_box_plus">
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="gallery/qinghai.html" aria-label="查看青海相册"><i class="fa-solid fa-images" aria-hidden="true"></i></a>
                         </div>
                     </figure> 
                 </div>
@@ -870,8 +848,8 @@
             <div class="relative max-w-4xl mx-auto">
                 <!-- 照片容器 -->
                 <div class="relative overflow-hidden rounded-lg shadow-xl" id="blur-photo-container" style="max-width: 100%; height: 700px; margin: 0 auto;">
-                    <img 
-                        src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/homefoot.jpg" 
+                    <img loading="lazy" decoding="async"
+                        src="assets/picture/home-last.png"
                         alt="特别时刻" 
                         class="w-full h-full transition-all duration-700 ease-in-out blur-photo object-cover object-center"
                         id="blur-photo" style="width: 100%; display: block;">
@@ -894,11 +872,11 @@
     <div class="footer-section">      
         <div class="footer-inner">
             <figure class="mb-0 footer-hearts">
-                <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/footer-birds-img.png" alt="" class="star">
+                <img loading="lazy" decoding="async" src="assets/picture/footer-birds-img.png" alt="" class="star">
             </figure>
             <div class="footer-msg floating-chat">
                 <figure class="mb-0 footer-chat-img">
-                    <img src="https://websiteanthony.oss-cn-beijing.aliyuncs.com/zrldynnew/assets/picture/footer-chat-img.png" alt="">
+                    <img loading="lazy" decoding="async" src="assets/picture/footer-chat-img.png" alt="">
                 </figure>
             </div>
             <div class="container">
@@ -910,10 +888,10 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="banner-btn discover-btn-banner">
-                                <a href="" class="text-decoration-none"><i class="fa fa-clipboard-list"></i>看一下时间线</a>
+                                <a href="#timeline" class="text-decoration-none"><i class="fa fa-clipboard-list" aria-hidden="true"></i>看一下时间线</a>
                             </div>
                             <div class="learn-btn">
-                                <a href="" class="text-decoration-none">看一下更多内容</a>
+                                <a href="#gallery" class="text-decoration-none">看一下更多内容</a>
                             </div>
                         </div>
                         <div class="col-lg-1 col-md-1 col-sm-1 d-lg-block d-none"></div>
@@ -923,10 +901,10 @@
         <div class="row">
             <div class="col-xl-5 col-lg-4 col-md-6 col-sm-12">
                 <div class="footer-right-box">
-                    <a class="navbar-brand pt-0" href="javascript:void(0);" style="margin-left: 100px; position: relative; display: block;"><div class="container">
+                    <a class="navbar-brand pt-0" href="#home" aria-label="返回主页" style="margin-left: 100px; position: relative; display: block;"><div class="container">
                                 <div class="emojis-container">
-                                  <span class="bear-emoji" id="bearEmoji" onclick="animateBear(this)">🐻</span>
-                                  <span class="rabbit-emoji" id="rabbitEmoji" onclick="animateRabbit(this)">🐰</span>
+                              <span class="bear-emoji" id="footerBearEmoji" onclick="animateBear(this)">🐻</span>
+                              <span class="rabbit-emoji" id="footerRabbitEmoji" onclick="animateRabbit(this)">🐰</span>
                                 </div>
                                 
                                 <div class="names">
@@ -935,19 +913,11 @@
                                 </div>
                                 
                                 <div class="decorations">
-                                  <span id="decoration">✨</span>
+                              <span id="footerDecoration">✨</span>
                                 </div>
                               </div>
                             </a>
                         <p class="footer-section-text">网站的Logo和很多功能正在制作中，请耐心等待吧！</p>
-                            <ul class="list-unstyled footer-social-icons">
-                                <li class="list-item">
-                                    <a href="#"><i class="fa-brands fa-facebook-f marginLeft facebook"></i></a>
-                                    <a href="#"><i class="fa-brands fa-twitter marginLeft twiter"></i></a>
-                                    <a href="#"><i class="fa-brands fa-linkedin-in marginLeft linkedin"></i></a>
-                                    <a href="#"><i class="fa-solid fa-g marginLeft gmil"></i></a>
-                                </li>
-                            </ul>
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 d-xl-block d-none"></div>
@@ -957,25 +927,25 @@
                         <ul class="list-unstyled footer-ul1">
                             <li>
                                 <i class="fa-solid fa-caret-right"></i>
-                                    <a href="" class="text-decoration-none footer-link-p">
+                                    <a href="#about" class="text-decoration-none footer-link-p">
                                     关于我们
                                     </a>
                                 </li>
                                 <li>
                                 <i class="fa-solid fa-caret-right"></i>
-                                    <a href="https://zrldyn.com/gallery/kaifeng.html" class="text-decoration-none footer-link-p">
+                                    <a href="gallery/kaifeng.html" class="text-decoration-none footer-link-p">
                                     旅行的很多很多照片📷️
                                     </a>
                                 </li>
                                 <li>
                                 <i class="fa-solid fa-caret-right"></i>
-                                    <a href="" class="text-decoration-none footer-link-p">
+                                    <a href="#footprints" class="text-decoration-none footer-link-p">
                                     旅行足迹👣
                                     </a>
                                 </li>
                                 <li>
                                 <i class="fa-solid fa-caret-right"></i>
-                                <a href="" class="text-decoration-none footer-link-p">
+                                <a href="#music" class="text-decoration-none footer-link-p">
                                     正在写呢
                                     </a>
                                 </li>
@@ -993,12 +963,12 @@
                                 <li class="list-item">
                                     <i class="fa-sharp fa-solid fa-phone-volume footer-location3"></i>
                                     <p class="contact-title">友情链接: </p>
-                                    <a href="" class="text-decoration-none footer-link-auto">www.rlzhao.com</a>
+                                    <a href="https://www.rlzhao.com" class="text-decoration-none footer-link-auto">www.rlzhao.com</a>
                                 </li>
                                 <li class="list-item">
                                     <i class="fa fa-envelope footer-location3"></i>
                                     <p class="contact-title">友情链接:</p>
-                                    <a href="" class="text-decoration-none footer-link-auto">www.rlzhao.com</a>
+                                    <a href="https://www.rlzhao.com" class="text-decoration-none footer-link-auto">www.rlzhao.com</a>
                                 </li>
                             </ul>
                         </div>
@@ -1009,7 +979,7 @@
            <div class="col-lg-5 col-md-6 col-sm-12">
 
            </div>
-           <div class="col-lg-17 col-md-6 col-sm-12">
+            <div class="col-lg-7 col-md-6 col-sm-12">
             <p class="footer-end-text">Copyright ©2025 zrldyn.com All Rights Reserved</p>
             
             
@@ -1018,11 +988,10 @@
         </div>
         </div>   
      </div>
-        <script src="assets/js/jquery-1.12.1.min.js"></script>
+         <script src="assets/js/jquery-3.6.0.min.js"></script>
         <script src="assets/js/animations.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/jquery-3.6.0.min.js"></script>
-        <script src="assets/js/popper.min.js"></script>
+         <script src="assets/js/popper.min.js"></script>
+         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/owl.carousel.js"></script>
         <script src="assets/js/aos.js"></script>
         <script src="assets/js/text-animations.js"></script>
@@ -1033,8 +1002,7 @@
         <script src="assets/js/custom-script.js"></script>
         <script src="assets/js/video-popup.js"></script>
         <!-- 音乐 -->
-        <script src="assets/extension/home-music/js/1.10.2jquery.min.js"></script>
-        <script type="text/javascript" src="assets/extension/home-music/js/TweenMax.min.js"></script>
+         <script type="text/javascript" src="assets/extension/home-music/js/TweenMax.min.js"></script>
 
         <!-- 熊和兔子动画脚本 -->
         <script>
@@ -1141,10 +1109,9 @@
       
           var playhead = document.getElementById("playhead");
           audioElement.addEventListener("timeupdate", function () {
-              var duration = this.duration;
-              var currentTime = this.currentTime;
-              var percentage = (currentTime / duration) * 100;
-              playhead.style.width = percentage * 4 + 'px';
+              if (!playhead || !Number.isFinite(this.duration) || this.duration <= 0) return;
+              var percentage = (this.currentTime / this.duration) * 100;
+              playhead.style.width = percentage + '%';
           });
       
           function updateInfo() {
@@ -1157,20 +1124,8 @@
               if ($('.player .player__albumImg.active-song').is(':last-child')) {
                   $('.player__albumImg.active-song').removeClass('active-song');
                   $('.player .player__albumImg:first-child').addClass('active-song');
-                  audioElement.addEventListener("timeupdate", function () {
-                      var duration = this.duration;
-                      var currentTime = this.currentTime;
-                      var percentage = (currentTime / duration) * 100;
-                      playhead.style.width = percentage * 4 + 'px';
-                  });
               } else {
                   $('.player__albumImg.active-song').removeClass('active-song').next().addClass('active-song');
-                  audioElement.addEventListener("timeupdate", function () {
-                      var duration = this.duration;
-                      var currentTime = this.currentTime;
-                      var percentage = (currentTime / duration) * 100;
-                      playhead.style.width = percentage + '%';
-                  });
               }
               updateInfo();
               audioElement.setAttribute('src', $('.active-song').attr('data-src'));
@@ -1181,20 +1136,8 @@
               if ($('.player .player__albumImg.active-song').is(':first-child')) {
                   $('.player__albumImg.active-song').removeClass('active-song');
                   $('.player .player__albumImg:last-child').addClass('active-song');
-                  audioElement.addEventListener("timeupdate", function () {
-                      var duration = this.duration;
-                      var currentTime = this.currentTime;
-                      var percentage = (currentTime / duration) * 100;
-                      playhead.style.width = percentage * 4 + 'px';
-                  });
               } else {
                   $('.player__albumImg.active-song').removeClass('active-song').prev().addClass('active-song');
-                  audioElement.addEventListener("timeupdate", function () {
-                      var duration = this.duration;
-                      var currentTime = this.currentTime;
-                      var percentage = (currentTime / duration) * 100;
-                      playhead.style.width = percentage + 'px';
-                  });
               }
               updateInfo();
               audioElement.setAttribute('src', $('.active-song').attr('data-src'));

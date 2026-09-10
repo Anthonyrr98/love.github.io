@@ -5,7 +5,7 @@
             var countersQuantity = counters.length;
             var counter = [];
             
-            for (i = 0; i < countersQuantity; i++) {
+            for (let i = 0; i < countersQuantity; i++) {
               counter[i] = parseInt(counters[i].innerHTML,10);
             }
             
@@ -19,7 +19,7 @@
               }, 40);
             }
             
-            for (j = 0; j < countersQuantity; j++) {
+            for (let j = 0; j < countersQuantity; j++) {
               count(0, counter[j], j);
             }
             });

@@ -4,8 +4,8 @@
   "description": "老赵赵和小楠楠的个人网站，使用Tailwind CSS重构",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+    "dev": "tailwindcss -i ./src/input.css -o ./assets/css/tailwind.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./assets/css/tailwind.css --minify"
   },
   "keywords": ["personal-website", "tailwindcss"],
   "author": "",
@@ -15,4 +15,4 @@
     "autoprefixer": "^10.4.18",
     "postcss": "^8.4.31"
   }
-} 
+}
