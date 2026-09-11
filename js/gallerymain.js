@@ -73,6 +73,19 @@
 		  itemSelector: '.isotopeSelector',
 		  layoutMode: 'masonry'
 		});
+
+		// Images do not have intrinsic dimensions in the legacy markup. Recalculate
+		// the masonry grid whenever a lazy-loaded image obtains its real size.
+		$isotopeContainer.find('img').each(function () {
+			if (!this.complete) {
+				$(this).one('load error', function () {
+					$isotopeContainer.isotope('layout');
+				});
+			}
+		});
+		$(window).one('load', function () {
+			$isotopeContainer.isotope('layout');
+		});
 		// filter functions
 		var filterFns = {};
 		
